@@ -61,7 +61,7 @@ describe('3 - Verifica as funções e os mocks', () => {
     mockFunctions.factorial = jest.fn().mockImplementation((a) => {
       let somatorio = 1;
       for (let i = 1; i <= a; i += 1) {
-        somatorio = somatorio * i;
+        somatorio *= i;
       }
       return somatorio;
     });
